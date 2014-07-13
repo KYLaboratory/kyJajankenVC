@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F1BF8D2-FE2C-4ED9-B179-F66FB3592C07}</ProjectGuid>
+    <RootNamespace>JajankenHunter</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\cinder_0.8.5_vc2010\boost;C:\Program Files %28x86%29\OpenNI2\Include;C:\cinder_0.8.5_vc2010\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\cinder_0.8.5_vc2010\lib\msw;C:\cinder_0.8.5_vc2010\lib;C:\Program Files %28x86%29\OpenNI2\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files %28x86%29\OpenNI2\Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files %28x86%29\OpenNI2\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;"..\..\Desktop\cinder_0.8.5_vc2010\include";"..\..\Desktop\cinder_0.8.5_vc2010\boost";..\blocks\OpenCV\include;..\blocks\OpenCV\include\opencv2</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\Desktop\cinder_0.8.5_vc2010\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder_d.lib;%(AdditionalDependencies);..\blocks\OpenCV\lib\vc10\opencv_calib3d243d.lib;..\blocks\OpenCV\lib\vc10\opencv_contrib243d.lib;..\blocks\OpenCV\lib\vc10\opencv_core243d.lib;..\blocks\OpenCV\lib\vc10\opencv_features2d243d.lib;..\blocks\OpenCV\lib\vc10\opencv_flann243d.lib;..\blocks\OpenCV\lib\vc10\opencv_gpu243d.lib;..\blocks\OpenCV\lib\vc10\opencv_imgproc243d.lib;..\blocks\OpenCV\lib\vc10\opencv_legacy243d.lib;..\blocks\OpenCV\lib\vc10\opencv_ml243d.lib;..\blocks\OpenCV\lib\vc10\opencv_nonfree243d.lib;..\blocks\OpenCV\lib\vc10\opencv_objdetect243d.lib;..\blocks\OpenCV\lib\vc10\opencv_photo243d.lib;..\blocks\OpenCV\lib\vc10\opencv_stitching243d.lib;..\blocks\OpenCV\lib\vc10\opencv_ts243d.lib;..\blocks\OpenCV\lib\vc10\opencv_video243d.lib;..\blocks\OpenCV\lib\vc10\opencv_videostab243d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\Desktop\cinder_0.8.5_vc2010\lib";"..\..\Desktop\cinder_0.8.5_vc2010\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\Desktop\cinder_0.8.5_vc2010\include";"..\..\Desktop\cinder_0.8.5_vc2010\boost";..\blocks\OpenCV\include;..\blocks\OpenCV\include\opencv2</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\Desktop\cinder_0.8.5_vc2010\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;%(AdditionalDependencies);..\blocks\OpenCV\lib\vc10\opencv_calib3d243.lib;..\blocks\OpenCV\lib\vc10\opencv_contrib243.lib;..\blocks\OpenCV\lib\vc10\opencv_core243.lib;..\blocks\OpenCV\lib\vc10\opencv_features2d243.lib;..\blocks\OpenCV\lib\vc10\opencv_flann243.lib;..\blocks\OpenCV\lib\vc10\opencv_gpu243.lib;..\blocks\OpenCV\lib\vc10\opencv_imgproc243.lib;..\blocks\OpenCV\lib\vc10\opencv_legacy243.lib;..\blocks\OpenCV\lib\vc10\opencv_ml243.lib;..\blocks\OpenCV\lib\vc10\opencv_nonfree243.lib;..\blocks\OpenCV\lib\vc10\opencv_objdetect243.lib;..\blocks\OpenCV\lib\vc10\opencv_photo243.lib;..\blocks\OpenCV\lib\vc10\opencv_stitching243.lib;..\blocks\OpenCV\lib\vc10\opencv_ts243.lib;..\blocks\OpenCV\lib\vc10\opencv_video243.lib;..\blocks\OpenCV\lib\vc10\opencv_videostab243.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\Desktop\cinder_0.8.5_vc2010\lib";"..\..\Desktop\cinder_0.8.5_vc2010\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AuraEffectGenerator.cpp" />
+    <ClCompile Include="..\src\handClip.cpp" />
+    <ClCompile Include="..\src\HandRectCutter.cpp" />
+    <ClCompile Include="..\src\JajankenHunterApp.cpp" />
+    <ClCompile Include="..\src\KasuyaEffector.cpp" />
+    <ClCompile Include="..\src\Particle.cpp" />
+    <ClCompile Include="..\src\TrickEffectGenerator.cpp" />
+    <ClCompile Include="..\src\TrickEstimater.cpp" />
+    <ClCompile Include="..\src\Xtion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\AuraEffectGenerator.h" />
+    <ClInclude Include="..\include\CameraImage.h" />
+    <ClInclude Include="..\include\handClip.h" />
+    <ClInclude Include="..\include\HandRectCutter.h" />
+    <ClInclude Include="..\include\Janken.h" />
+    <ClInclude Include="..\include\KasuyaEffector.h" />
+    <ClInclude Include="..\include\Labeling.h" />
+    <ClInclude Include="..\include\Particle.h" />
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\blocks\OpenCV\include\CinderOpenCV.h" />
+    <ClInclude Include="..\include\TrickEffectGenerator.h" />
+    <ClInclude Include="..\include\TrickEstimater.h" />
+    <ClInclude Include="..\include\Xtion.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
